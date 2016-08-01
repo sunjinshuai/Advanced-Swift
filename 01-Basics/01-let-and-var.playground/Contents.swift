@@ -25,3 +25,5 @@ name = "https://github.com/sunjinshuai"
 
 // 一次为多个变量显式声明类型
 var a , b , c: Double
+
+

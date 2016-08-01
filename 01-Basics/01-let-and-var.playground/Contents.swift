@@ -17,6 +17,7 @@ index = 3
 var x = 1 , y = 2 , z = 3
 
 // Swift语言是强类型语言:cannot assign value of type `String` to type `Int`
+// 在Swift语言中对类型要求非常严格，在任何不同类型的数据之间，不允许直接运算，不会做默认的隐式的转换
 // x = "Hello"
 
 // 显式的声明变量类型

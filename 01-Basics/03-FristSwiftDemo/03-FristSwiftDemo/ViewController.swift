@@ -27,6 +27,10 @@
  OC UIButtonTypeCustom
  Swift .Custom
  
+ 6、监听方法
+ OC @selector
+ Swift3.0 #selector，如果带参数，不需要使用`:`
+ Swift2.0 直接使用""，需要使用`:`
  */
 
 import UIKit

@@ -7,6 +7,10 @@ import UIKit
 // 定义变量时，在类型后面添加一个?，表示该变量是可选的
 // 变量可选项的默认值是nil
 // 常量可选项没有默认值，主要用于构造函数中给常量设置初始数值
+// 定义可选项使用`?`
+// 解包使用`!`
+// var修饰的可选值的默认值是nil
+// let修饰的可选值是没有默认值
 
 var str = "Hello, playground"
 
@@ -29,5 +33,8 @@ print(y)
 // 2> `!表示强制解包，从可选值中强行获取对应的非空值
 print(x! + y!)
 
-
 // 最常见的错误
+// 1> Constant `y` used before being initialized 常量在使用之前必须初始化
+// 2> unexpectedly found nil while unwrapping an Optional value 如果从从可选值中强行获取对应的非空值，真的为nil，程序就会崩溃
+
+

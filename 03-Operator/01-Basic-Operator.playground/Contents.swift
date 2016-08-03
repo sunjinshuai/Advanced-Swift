@@ -3,8 +3,8 @@
 import UIKit
 
 // 一、赋值运算符
-var a = 3
-a = 2
+//var a = 3
+//a = 2
 
 // 二、数值运算
 var x = 10
@@ -99,3 +99,21 @@ let courses = ["慕课网2048私人定制","CSS3 3D特效","玩儿转swift","绚
 for i in 0..<courses.count{
     print( courses[i] )
 }
+
+// 十一、空值合并运算符
+// a ?? d
+
+// 注意：`??`就是是空值合并运算符，会对a进行判断，如果不为nil则解包，否则就返回d。
+var a: String? = "a"
+var b: String? = "b"
+var c = a ?? b      // "a"
+a = nil
+c = a ?? b          // "b"
+b = nil
+c = a ?? b ?? "c"   // "c"
+
+// 使用的时候有以下两点要求：
+
+// a 必须是 optional 的
+// b 必须和 a 类型一致
+// 也就是说，a 一定要有被备胎的可能，b 一定要有做备胎的资格。

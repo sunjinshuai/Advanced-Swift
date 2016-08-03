@@ -39,3 +39,15 @@ let message = "\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)"
 // message is "3 times 2.5 is 7.5"
 
 // 注意：您插值字符串中写在括号中的表达式不能包含非转义双引号 (") 和反斜杠 (\)，并且不能包含回车或换行符。
+
+let name = "老王"
+let age = 18
+let title: String? = "Boss"
+
+// 注意：使用字符串插值时需要注意，可选项Optional
+print("\(name) \(age) \(title)")
+// 老王 18 Optional("Boss")"
+print("\(name) \(age) \(title ?? "")")
+
+
+        

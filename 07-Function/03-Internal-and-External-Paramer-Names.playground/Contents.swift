@@ -53,3 +53,11 @@ func mutiply( num1:Int , _ num2: Int ) -> Int{
     return num1*num2
 }
 mutiply(4, 2)
+
+// 注意：在定义形参时，你可以通过使用下划线(_)来代替显示外部名称。不过在适当的情况下，带有默认值形参的外部名通常是优先推荐的。
+func join(s1: String, s2: String, joiner: String = "-") -> String {
+    return s1 + joiner + s2
+}
+
+join("1", s2: "2", joiner: "3")
+join("1", s2: "2")

@@ -2,6 +2,7 @@
 
 import UIKit
 
+// 函数嵌套
 func tier1MailFeeByWeight( weight: Int) -> Int{
     
     return 1*weight

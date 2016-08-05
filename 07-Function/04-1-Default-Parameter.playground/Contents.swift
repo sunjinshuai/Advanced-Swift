@@ -21,6 +21,7 @@ func sayHelloTo( name: String , withGreetingWord greeting: String = "Hello" , pu
 
 sayHelloTo("Playground", withGreetingWord: "Hi", punctuation: "!!!")
 
+// 注意：请在函数形参列表的末尾放置带默认值的形参。这将确保所有函数调用都使用顺序相同的无默认值实参，并让在每种情况下清晰地调用相同的函数。
 // 默认参数顺序变更是可以的，但最好和声明序一样
 sayHelloTo("Playground", punctuation: "!!!", withGreetingWord: "Hi")
 

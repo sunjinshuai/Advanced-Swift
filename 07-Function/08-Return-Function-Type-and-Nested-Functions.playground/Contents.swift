@@ -2,6 +2,7 @@
 
 import UIKit
 
+// 嵌套函数默认对外界是隐藏的，但仍然可以调用和使用其内部的函数。内部函数也可以返回一个嵌套函数，允许在嵌套函数内的另一个范围内使用。
 // 函数嵌套
 func tier1MailFeeByWeight( weight: Int) -> Int{
     

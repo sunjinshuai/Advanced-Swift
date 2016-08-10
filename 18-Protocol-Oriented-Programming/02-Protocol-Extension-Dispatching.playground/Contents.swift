@@ -42,9 +42,9 @@ struct BasketballRecord: Record{
     var wins: Int
     var losses: Int
     
-//    func winningPercent() -> Double {
-//        return Double(wins)/Double(gamePlayed)
-//    }
+    func winningPercent() -> Double {
+        return Double(wins)/Double(gamePlayed)
+    }
 }
 
 
@@ -54,9 +54,9 @@ struct BaseballRecord: Record{
     var losses: Int
     let gamePlayed = 162
     
-//    func winningPercent() -> Double {
-//        return Double(wins)/Double(gamePlayed)
-//    }
+    func winningPercent() -> Double {
+        return Double(wins)/Double(gamePlayed)
+    }
 }
 
 
@@ -65,13 +65,13 @@ struct FootballRecord: Record, Tieable{
     var losses: Int
     var ties: Int
     
-//    var gamePlayed: Int{
-//        return wins + losses + ties
-//    }
-//
-//    func winningPercent() -> Double {
-//        return Double(wins)/Double(wins+losses+ties)
-//    }
+    var gamePlayed: Int{
+        return wins + losses + ties
+    }
+
+    func winningPercent() -> Double {
+        return Double(wins)/Double(wins+losses+ties)
+    }
 }
 
 

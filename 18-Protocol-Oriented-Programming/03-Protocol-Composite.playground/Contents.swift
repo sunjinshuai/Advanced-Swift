@@ -108,7 +108,7 @@ struct Student: CustomStringConvertible, Prizable{
     }
 }
 
-let liuyubobobo = Student(name: "liuyubobobo", score: 100)
-award(liuyubobobo)
+let sunjinshuai = Student(name: "sunjinshuai", score: 100)
+award(sunjinshuai)
 
 

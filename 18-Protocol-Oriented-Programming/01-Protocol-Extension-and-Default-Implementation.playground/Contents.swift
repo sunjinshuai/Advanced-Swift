@@ -38,7 +38,10 @@ struct BasketballRecord: Record{
         return Double(wins)/Double(gamePlayed)
     }
 }
-//extension BasketballRecord: CustomStringConvertible{}
+
+extension BasketballRecord: CustomStringConvertible{
+
+}
 
 
 struct BaseballRecord: Record{

@@ -21,13 +21,13 @@ struct Student: CustomStringConvertible, Equatable, Comparable, Prizable{
 func ==(s1:Student,s2:Student) -> Bool{ return s1.score == s2.score}
 func <(s1:Student,s2:Student) -> Bool{ return s1.score < s2.score}
 
-let liuyubobobo = Student(name: "liuyubobobo", score: 100)
+let sunjinshuai = Student(name: "sunjinshuai", score: 100)
 
 let a = Student(name: "Alice", score: 80)
 let b = Student(name: "Bob", score: 92)
 let c = Student(name: "Karl", score: 85)
 
-let students = [a, b, c, liuyubobobo]
+let students = [a, b, c, sunjinshuai]
 
 
 //func topOne(seq:[Comparable]) -> Comparable
@@ -38,7 +38,7 @@ func topOne<T: Comparable>(seq:[T]) -> T{
 
 topOne([4,5,7,2])
 topOne(["Hello","Swift"])
-topOne([a,b,c,liuyubobobo])
+topOne([a,b,c,sunjinshuai])
 
 
 func topPrizableOne<T: protocol<Comparable, Prizable>>(seq:[T]) -> T?{

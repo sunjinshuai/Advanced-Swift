@@ -2,6 +2,33 @@
 
 import UIKit
 
+// 使用常量记录函数
+func sum(x: Int, y: Int) -> Int {
+    return x + y
+}
+
+let sum1 = sum
+
+print(sum1(20, y: 40))
+
+// 1.最简单的闭包
+let hello = {
+    print("Swift")
+}
+hello()
+
+// 2.带参数的闭包
+let study = { (x: Int) -> () in
+    print(x)
+}
+study(20)
+
+// 3.带参数返回值的闭包
+let master = { (string: String) -> String in
+    return string + "Swift"
+}
+print(master("Hello,"))
+
 var arr:[Int] = []
 for _ in 0..<100{
     arr.append(random()%1000)

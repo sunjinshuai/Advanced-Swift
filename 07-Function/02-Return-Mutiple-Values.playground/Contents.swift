@@ -34,3 +34,20 @@ if let result = findMaxAndMin( scores! ){
     print("The max value is \(result.max)")
     print("The min value is \(result.min)")
 }
+
+// 无返回值参数
+func hello(){
+    print("Swift")
+}
+
+func study() -> () {
+    print("Swift")
+}
+
+func master() -> Void {
+    print("Swift")
+}
+
+hello()
+study()
+master()

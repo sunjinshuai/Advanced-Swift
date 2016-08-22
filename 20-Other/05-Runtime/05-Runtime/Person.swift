@@ -8,6 +8,9 @@
 
 import UIKit
 
+// 基本数据类型，如果定义成可选性，使用运行时获取不到
+// 使用private修饰的属性，使用运行时，同样也获取不到属性，但是能获取到成员变量
+
 class Person: NSObject {
     
     var name: String?

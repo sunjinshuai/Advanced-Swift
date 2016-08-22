@@ -36,7 +36,3 @@ person2
 
 person
 
-
-// PPT讲解Reference Type
-
-

@@ -18,7 +18,7 @@ print(array)
 array = array + ["学习","关灯睡觉"]
 print(array)
 
-array.insert("玩手机", atIndex: 5)
+array.insert("玩手机", at: 5)
 print(array)
 
 
@@ -29,7 +29,7 @@ print(array)
 array.removeFirst()
 print(array)
 
-array.removeAtIndex(4)
+array.remove(at: 4)
 //array.removeAtIndex(10)
 print(array)
 

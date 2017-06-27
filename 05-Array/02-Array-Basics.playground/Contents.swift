@@ -2,27 +2,22 @@
 
 import UIKit
 
-
 var numbers = [1,2,3,4,5]
 var vowels = ["A","E","I","O","U"]
 var emptyArray = [Int]()
 
-
 // 数组长度
 vowels.count
-
 
 // 判空
 numbers.isEmpty
 emptyArray.isEmpty
-
 
 // 获取元素
 vowels[2]
 // 数组越界是一个严重的错误
 //vowels[-1]
 //vowels[5]
-
 
 // 获取第一个元素和最后一个元素，返回的是可选型
 vowels.first
@@ -34,19 +29,15 @@ if let firstVowel = vowels.first{
 }
 
 vowels.first!
-
-vowels[vowels.count-1]
-
+vowels[vowels.count - 1]
 
 // 获取最小，最大值
-numbers.minElement()
-vowels.maxElement()
-
+numbers.min()
+vowels.max()
 
 // 使用范围
-numbers[2..<4]
-numbers[2..<numbers.count]
-
+numbers[2..< 4]
+numbers[2..< numbers.count]
 
 // 包含
 vowels.contains("A")
@@ -55,8 +46,7 @@ vowels.contains("B")
 let letter = "A"
 if vowels.contains( letter ){
     print("\(letter) is a vowel")
-}
-else{
+} else {
     print("\(letter) is not a vowel")
 }
 
@@ -65,15 +55,13 @@ vowels.indexOf("E")
 
 if let index = vowels.indexOf("E"){
     print("E is a vowel in position \(index+1).")
-}
-else{
+} else {
     print("E is not a vowel.")
 }
 
-
 // 遍历
 // 1.按照下标遍历
-for index in 0..<numbers.count{
+for index in 0..< numbers.count{
     print(numbers[index])
 }
 

@@ -3,7 +3,7 @@
 import UIKit
 
 let point = (0,0)
-switch point{
+switch point {
 case (0,0):
     print("It's origin!")
     fallthrough
@@ -38,7 +38,7 @@ default:
 // fallthrough应该用于从一般到特殊的判定
 // 以下代码的输出，就是错误的。
 let num = 3
-switch num{
+switch num {
 case -3...3:
     print("small number")
     fallthrough
@@ -54,3 +54,4 @@ case 1...100:
 default:
     print("a number")
 }
+

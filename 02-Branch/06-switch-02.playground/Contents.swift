@@ -60,3 +60,17 @@ case (let x,let y):
     print("It's just an ordinary point.")
     print("The point is ( \(x) , \(y) )")
 }
+
+// 注意：switch必须要保证能处理所有情况
+// case、default后面至少要有一条语句
+// 如果不想做任何事情，加break即可
+// 如果能保证已处理所有情况，也可以不必使用default
+
+enum Answer { case right, wrong }
+let answer = Answer.right
+switch answer {
+case Answer.right:
+    print("right")
+case Answer.wrong:
+    print("wrong")
+}
